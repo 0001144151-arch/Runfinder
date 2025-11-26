@@ -1,0 +1,120 @@
+
+.cards-grid {
+    display: grid !important;
+    gap: 22px !important;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)) !important;
+    padding: 10px !important;
+}
+
+
+.card-square,
+.card-event {
+    width: 100% !important;
+    max-width: 320px !important;       
+    margin: 0 auto !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+
+    background: rgba(255,255,255,0.02) !important;
+    backdrop-filter: blur(6px) !important;
+
+    border: 1px solid rgba(255,255,255,0.08) !important;
+
+    
+    box-shadow:
+        0 0 12px rgba(255,0,80,0.25),
+        0 0 25px rgba(255,0,100,0.18) !important;
+
+    transition: transform .20s ease, box-shadow .25s ease;
+}
+
+
+.card-square:hover,
+.card-event:hover {
+    transform: scale(1.03) !important;
+    box-shadow:
+        0 0 18px rgba(255,0,80,0.45),
+        0 0 35px rgba(255,0,120,0.30) !important;
+}
+
+
+.card-square .card-figure,
+.card-event .card-figure {
+    width: 100% !important;
+    height: 150px !important;            
+    max-height: 150px !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    
+    box-shadow: inset 0 -60px 60px rgba(0,0,0,0.55) !important;
+}
+
+
+.card-square .card-figure span,
+.card-event .card-figure span {
+    font-size: 32px !important;          
+    opacity: 0.85 !important;
+    text-shadow: 0 0 12px rgba(255,0,80,0.6) !important;
+}
+
+
+.card-square .card-body,
+.card-event .card-body {
+    padding: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+}
+
+
+.card-square .card-title,
+.card-event .card-title {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+
+.card-square .card-meta,
+.card-event .card-meta {
+    font-size: 0.80rem !important;
+    color: rgba(255,255,255,0.55) !important;
+}
+
+
+.card-event .view-more {
+    margin-top: 6px !important;
+    text-align: right !important;
+    font-size: 0.80rem !important;
+    color: #ff3380 !important;
+    text-decoration: none !important;
+    transition: 0.25s;
+}
+
+.card-event .view-more:hover {
+    color: #ff3380 !important;
+}
+/* BOTÃO "Ver eventos" — força texto branco */
+.hero-buttons a,
+.hero-buttons .btn-ver-eventos,
+.btn-primary,
+.btn-red {
+    color: #fff !important;
+}
+
+/* Se seu botão tiver classe específica */
+.btn-ver-eventos {
+    color: #fff !important;
+}
+
+/* Hover também branco */
+.hero-buttons a:hover,
+.btn-ver-eventos:hover {
+    color: #fff !important;
+}
